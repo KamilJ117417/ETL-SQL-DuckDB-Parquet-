@@ -636,19 +636,6 @@ MIT
 
 ---
 
-## 🎯 Portfolio Value
-
-This project demonstrates:
-- **Data Engineering**: Schema design, ETL architecture, data validation
-- **Analytics**: SQL optimization, query performance, benchmarking
-- **DevOps**: Docker, CI/CD, environment management
-- **Full Stack**: Backend (Python), Frontend (Streamlit), Database (DuckDB/Parquet)
-- **Genomics Domain Knowledge**: QC metrics, metadata normalization
-
-**Suitable for**: Data Engineer, Analytics Engineer, Software Engineer interviews
-
----
-
 ## 🚀 Quick Navigation
 
 - **Want to run?** → [Quickstart](#quickstart)
@@ -659,7 +646,3 @@ This project demonstrates:
 - **Want benchmarks?** → [Benchmark Results](#-benchmark-results)
 
 ---
-
-**Status**: ✅ **PRODUCTION-READY**  
-**Version**: 2.0 (Advanced Edition)  
-**Last Updated**: January 20, 2026
