@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+data/processed/
+data/staging/
+data/quarantine/
+*.duckdb
+*.duckdb-wal
+.env
+warehouse.db
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Benchmarks
+benchmark_results.json

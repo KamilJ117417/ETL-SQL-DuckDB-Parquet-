@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genomics-metadata-etl-duckdb"
+version = "0.1.0"
+description = "Reproducible ETL pipeline that ingests genomics sample/run metadata from CSV/TSV, validates and normalizes schema, stores curated data in Parquet, and enables fast analytical SQL queries via DuckDB"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "duckdb>=0.9.0",
+    "pyarrow>=14.0.0",
+    "pydantic>=2.0.0",
+    "typer>=0.9.0",
+    "click>=8.1.0",
+    "python-dotenv>=1.0.0",
+    "boto3>=1.28.0",
+    "streamlit>=1.28.0",
+    "plotly>=5.17.0",
+    "jinja2>=3.1.0",
+    "schedule>=1.2.0",
+    "psutil>=5.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+    "pre-commit>=3.4.0",
+]
+
+[project.scripts]
+genomics-etl = "src.cli:app"
+
+[tool.setuptools]
+packages = ["src", "src.etl"]
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = ["E", "F", "W", "I"]
+
+[tool.mypy]
+python_version = "3.9"
+disallow_untyped_defs = false
+ignore_missing_imports = true
