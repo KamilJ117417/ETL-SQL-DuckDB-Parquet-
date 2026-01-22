@@ -1,24 +1,7 @@
-# 🧬 genomics-metadata-etl-duckdb (v2.0 — Advanced Edition)
+# 🧬 genomics-metadata-etl-duckdb
 
 **Production-grade ETL pipeline for genomics metadata with advanced GUI, data profiling, automated reporting, QC analysis, schema validation, audit logging, batch processing, and job scheduling.**
 
-## ✨ What's New in v2.0 — Advanced Edition
-
-This is a **complete overhaul** with 9 new enterprise-grade features:
-
-| # | Feature | Module | Status |
-|---|---------|--------|--------|
-| 1️⃣ | 📊 Data Profiling Dashboard | `src/profiling.py` | ✅ |
-| 2️⃣ | 📄 Automated Report Generation (HTML/MD) | `src/reporting.py` | ✅ |
-| 3️⃣ | 🔄 Data Comparison (Before/After) | `src/profiling.py` | ✅ |
-| 4️⃣ | 📈 Quality Metrics Dashboard (Genomics) | `src/qc_metrics.py` | ✅ |
-| 5️⃣ | 📋 Schema Inspector & Validator | `src/schema_inspector.py` | ✅ |
-| 6️⃣ | 📅 Pipeline History & Audit Log (SQLite) | `src/history.py` | ✅ |
-| 7️⃣ | ⏰ Scheduled Pipeline Execution | `src/scheduler.py` | ✅ |
-| 8️⃣ | 📁 Multi-file Upload & Batch Processing | `src/file_upload.py` | ✅ |
-| 9️⃣ | 🎨 Advanced Streamlit GUI (11 tabs) | `app_advanced.py` | ✅ |
-
-**New UI**: 11 professional tabs in Streamlit with Plotly charts, real-time progress, downloadable reports, and session state management.
 
 ## Overview
 
@@ -254,8 +237,6 @@ streamlit run app_advanced.py
 
 ---
 
-## 🆕 Advanced Features (v2.0)
-
 ### 1️⃣ **Data Profiling & Quality Scoring**
 
 ```python
@@ -443,13 +424,13 @@ genomics-metadata-etl-duckdb/
 │   ├── cli.py                 # CLI interface (typer)
 │   ├── benchmarks.py          # Performance benchmarking
 │   ├── s3_handler.py          # AWS S3 integration
-│   ├── profiling.py           # 🆕 Data quality profiling
-│   ├── reporting.py           # 🆕 Report generation (HTML/MD)
-│   ├── history.py             # 🆕 Pipeline audit log (SQLite)
-│   ├── scheduler.py           # 🆕 Job scheduling
-│   ├── schema_inspector.py    # 🆕 Schema validation
-│   ├── file_upload.py         # 🆕 Batch file processing
-│   ├── qc_metrics.py          # 🆕 Genomics QC analysis
+│   ├── profiling.py           # Data quality profiling
+│   ├── reporting.py           # Report generation (HTML/MD)
+│   ├── history.py             # Pipeline audit log (SQLite)
+│   ├── scheduler.py           # Job scheduling
+│   ├── schema_inspector.py    # Schema validation
+│   ├── file_upload.py         # Batch file processing
+│   ├── qc_metrics.py          # Genomics QC analysis
 │   └── etl/
 │       ├── __init__.py
 │       ├── ingest.py          # CSV/TSV reader
@@ -469,9 +450,9 @@ genomics-metadata-etl-duckdb/
 │   ├── data_dictionary.md     # Schema definitions
 │   ├── example_queries.md     # Query examples
 │   ├── benchmark_results.md   # Performance analysis
-│   ├── ADVANCED_FEATURES.md   # 🆕 v2.0 features guide
-│   ├── DEPLOYMENT_GUIDE.md    # 🆕 Production deployment
-│   └── STREAMLIT_README.md    # 🆕 GUI documentation
+│   ├── ADVANCED_FEATURES.md   # Features guide
+│   ├── DEPLOYMENT_GUIDE.md    # Production deployment
+│   └── STREAMLIT_README.md    # GUI documentation
 ├── tests/
 │   ├── test_validate.py
 │   ├── test_transform.py
@@ -481,7 +462,7 @@ genomics-metadata-etl-duckdb/
 ├── .gitignore
 ├── .env.example
 ├── app.py                     # Basic Streamlit GUI
-├── app_advanced.py            # 🆕 Advanced Streamlit GUI (11 tabs)
+├── app_advanced.py            # Advanced Streamlit GUI (11 tabs)
 ├── pyproject.toml
 ├── setup.py
 ├── Makefile
